@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Veeraaj B Juneja — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="#">Veeraaj</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero container">
+        <div class="hero-left">
+          <h1>Veeraaj B Juneja</h1>
+          <p class="lead">B.Tech CSE — Amity University Noida • First Year</p>
+          <p class="summary">I build scalable systems, user-centric products, and clean engineering foundations — preparing to crack FAANG/MAANG roles.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="resume.md" target="_blank">Resume</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="avatar">
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Avatar">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0" stop-color="#6C5CE7" />
+                  <stop offset="1" stop-color="#00BFA6" />
+                </linearGradient>
+              </defs>
+              <rect width="120" height="120" rx="20" fill="url(#g)" />
+              <g transform="translate(20,28)" fill="#fff">
+                <circle cx="40" cy="24" r="18" opacity="0.95" />
+                <path d="M0 84c6-18 20-30 40-30s34 12 40 30H0z" opacity="0.9" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container about">
+        <h2>About</h2>
+        <p>I'm a first-year B.Tech Computer Science student at Amity University Noida with a passion for systems, algorithms, product design, and UX. I focus on building resume-worthy projects that showcase data structures, distributed systems, low-latency engineering, and polished product experiences.</p>
+      </section>
+
+      <section id="skills" class="container skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill">
+            <h3>Core</h3>
+            <ul>
+              <li>Data Structures & Algorithms</li>
+              <li>Operating Systems & Networking</li>
+              <li>System Design</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python • C++ • Java</li>
+              <li>JavaScript • TypeScript</li>
+            </ul>
+          </div>
+          <div class="skill">
+            <h3>Tools & Frameworks</h3>
+            <ul>
+              <li>React • Node.js • Docker</li>
+              <li>Redis • Kafka • PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container projects">
+        <h2>Projects</h2>
+        <p class="muted">Sample projects designed to demonstrate FAANG-level engineering depth.</p>
+        <div class="project-grid">
+          <article class="card">
+            <h3>Scalable Chat Service</h3>
+            <p>Designed a real-time chat backend with sharding, horizontal scaling, and at-least-once delivery semantics. Tech: Node.js, Redis, WebSocket, Docker.</p>
+            <p class="meta">Highlights: <strong>99ms</strong> median delivery latency, handled simulated 100k concurrent users.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Realtime Recommender</h3>
+            <p>Built an online recommendation pipeline using online feature stores and approximate nearest neighbors for low-latency suggestions. Tech: Python, FAISS, Kafka.</p>
+            <p class="meta">Highlights: end-to-end 120ms request time under load.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Distributed KV Store</h3>
+            <p>Implemented a simplified Raft-inspired replicated key-value store supporting leader election and snapshots. Tech: Go (conceptual), simulated network partitions.</p>
+            <p class="meta">Highlights: strong consistency model & automated recovery tests.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+
+          <article class="card">
+            <h3>Low-Latency Video Pipeline</h3>
+            <p>Prototype for low-latency streaming with adaptive bitrate and edge caching. Tech: Node, WebRTC, CDN patterns.</p>
+            <p class="meta">Highlights: reduced startup time by 40% with edge-first strategy.</p>
+            <a class="card-link" href="#">Read more →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h2>Contact</h2>
+        <p>I'm open to internships, mentorship, and collaboration. For resume requests or mock interviews, email me.</p>
+        <a class="btn primary" href="mailto:veeraaj@example.com">Email Me</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© 2026 Veeraaj B Juneja — Built with focus on FAANG readiness.</small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
